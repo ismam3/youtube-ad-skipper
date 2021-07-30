@@ -1,0 +1,19 @@
+{
+  "name": "Youtube Ad Skipper",
+  "description": "This extension will skip all the youtube ads!! Enjoy the adless youtube!!",
+  "version_name": "1.0 beta",
+  "version":"1.0",
+  "manifest_version": 2,
+
+  "content_scripts":[{
+    "js":["script.js"],
+    "run_at":"document_idle",
+    "matches":["https://*.youtube.com/"]
+  }],
+
+  "icons":{
+    "16":"16.png",
+    "48":"48.png",
+    "128":"128.png"
+  }
+}
